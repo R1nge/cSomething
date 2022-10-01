@@ -33,7 +33,7 @@ int main()
     //Получаю размер массива, вместо хард кода, так не надо ничего менять при изменении размера массива, к тому же производительность не важна
     for (int i = 0; i < sizeof(a)/sizeof(a[0]); i++) 
     {
-        printf("Enter coordinates of point ");
+        printf("Enter the coordinates of a the point ");
 
         if (i == 0) { printf("A \n"); } 
         else if (i == 1) { printf("B \n"); } 
