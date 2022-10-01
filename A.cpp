@@ -50,7 +50,13 @@ int main()
     if (isTriangle) 
     {
         float p = length(1, 2) + length(2, 3) + length(3, 1);
-        float S = sqrtf((p - length(1, 2)) * (p - length(2, 3)) * (p - length(3, 1) * p));
+        float temp = 
+        (a[0][0] - a[2][0])
+        * (a[1][1] - a[2][1]) - 
+        (a[1][0] - a[2][0]) 
+        * (a[0][1] - a[2][1]);
+        
+        float S = abs(temp) / 2;
 
         printf("result %f", S);
     } 
